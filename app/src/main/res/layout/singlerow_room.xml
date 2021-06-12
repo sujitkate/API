@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+    app:cardCornerRadius="15dp"
+    android:layout_marginBottom="15dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/uidID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UID Number"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/NameID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name ID"
+                android:layout_marginLeft="10dp"
+
+                android:textColor="@color/black"
+                android:textSize="25dp"/>
+
+
+            <TextView
+                android:id="@+id/prnID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PRN ID"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="25dp"/>
+
+
+            <TextView
+                android:id="@+id/deptID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dept ID"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="25dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+      </androidx.cardview.widget.CardView>

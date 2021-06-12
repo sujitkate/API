@@ -1,0 +1,82 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "9593f8ba419bb049773daf1a08cdc3af",
+    "entities": [
+      {
+        "tableName": "table2",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`countryID` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `CountryName` TEXT, `Capital` TEXT, `Region` TEXT, `SubRegion` TEXT, `Population` TEXT, `Area` TEXT, `NumericCode` TEXT, `ImgageURl` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "countryID",
+            "columnName": "countryID",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "CountryName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "capital",
+            "columnName": "Capital",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "region",
+            "columnName": "Region",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "subregion",
+            "columnName": "SubRegion",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "population",
+            "columnName": "Population",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "area",
+            "columnName": "Area",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "numericCode",
+            "columnName": "NumericCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "flag",
+            "columnName": "ImgageURl",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "countryID"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '9593f8ba419bb049773daf1a08cdc3af')"
+    ]
+  }
+}
